@@ -1,0 +1,134 @@
+/* ----------------------- GENERAL ----------------------- */
+
+:root {
+
+	--bg-gradient: linear-gradient(155deg, rgb(2, 15, 36), rgb(22, 2, 21));
+	font-size: 22px;
+	--emp-gradient: linear-gradient(135deg, rgb(21, 122, 255), rgb(247, 18, 255));
+}
+
+body {
+	font-family: 'Segoe UI';
+	background: var(--bg-gradient);
+	color: rgb(253, 255, 241);
+	margin: 0;
+	min-height: 100vh;
+	font-weight: 100;
+}
+* {
+	box-sizing: border-box;
+}
+
+/* ----------------------- HEADER ----------------------- */
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin-inline: 3rem;
+
+	border-bottom: 1px solid rgb(194, 194, 194);
+
+	/* position: relative; */
+}
+
+h1.logo {
+	margin: 0;
+	font-family: cursive;
+	padding-inline: 0.5rem 2rem;
+
+	position: relative;
+	bottom: -20px;
+	line-height: 2.5rem;
+	background-color: rgb(3 14 35);
+}
+
+nav > a {
+	padding-inline: 1rem;
+	position: relative;
+	bottom: -25px;
+	text-decoration: none;
+
+	background-color: rgb(12 9 29);
+
+	color: inherit;
+	border: 1px solid transparent;
+	padding-bottom: 2.5px;
+
+	border-radius: 0.5rem;
+}
+nav > a + a {
+	margin-inline-start: 2rem;
+}
+nav > a:hover,nav > a:focus {
+	border-color: white;
+}
+
+/* ----------------------- MAIN ----------------------- */
+
+.hero {
+	width: max-content;
+	margin-inline: auto;
+	text-align: center;
+	margin-block:5rem;
+	padding-inline: 1rem;
+	
+}
+
+.hero>h1 {
+	margin-block: 3rem;
+	font-size: 5rem;
+	margin-bottom: 0;
+}
+.hero>p{
+	margin-top: .5rem;
+	font-size: 1.5rem;
+	letter-spacing: 4px;	
+
+	font-weight: 300;
+}
+
+.emp{
+	font-weight: 500;
+	/* text-shadow: 0 1px 10px white; */
+	/* color:rgb(33, 167, 0); */
+}
+.stroke{
+
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px white;
+}
+
+.cta{
+	display:flex;
+	margin-top: 2rem;
+}
+.cta>button{
+	width: 100%;
+	margin: 0.5rem;
+	padding: 0.7rem 2rem;
+	font-size: 1.2rem;
+	border-radius: 10px;
+}
+
+#b2{
+	background-color: transparent;
+	color:white;
+	border: 1px solid white;
+	padding: 0.7rem 2rem;
+
+}
+
+
+#b1{
+	background: var(--emp-gradient);
+	border:none;
+	color:white;
+	transition:box-shadow 0.2s;
+}
+
+
+button:hover{
+	cursor: pointer;
+}
